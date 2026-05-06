@@ -1,0 +1,28 @@
+{
+  "repo": "swiftgit",
+  "language": "Swift",
+  "category": "Developer tools",
+  "goal": "Read loose Git object headers and summarize object kinds.",
+  "weights": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 5
+  },
+  "thresholds": {
+    "ship": 202,
+    "watch": 101
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
